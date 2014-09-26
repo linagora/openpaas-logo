@@ -132,7 +132,7 @@
         scope.spin = function() {
           if ( !scope.spinner ) {
             scope.spinner = openpaasDomLogo();
-            if ( scope.size ) { scope.spinner.style.fontSize = size+'em'; }
+            if ( scope.size ) { scope.spinner.style.fontSize = scope.size+'em'; }
             scope.spinner.classList.add(scope.spinnerClass);
           }
           element[0].appendChild(scope.spinner);
