@@ -30,7 +30,8 @@
   angular.module('openpaas-logo', [])
   .service('op:injectCss', function() {
     var rules = [
-      '.openpaas-logo{width:11em;height:11em;position:relative;display:inline-block;}',
+      '.openpaas-logo{width:11em;height:11em;position:relative;display:inline-block;-moz-box-sizing:border-box;box-sizing:border-box;' +
+      '-o-box-sizing:border-box;-ms-box-sizing:border-box;-webkit-box-sizing:border-box; }',
       '.openpaas-logo>.circle{position: absolute;border-radius: 40em;}',
       '.openpaas-logo>.blue-circle{height:3em;width:3em;border:0.9em solid rgb(89,122,183);top:1em;left:0.6em;',
       '.openpaas-logo>.yellow-circle{height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;',
@@ -110,7 +111,7 @@
       return root;
     };
   }])
-  .directive('openpassLogo', ['op:injectCss', 'op:template', function(foo, template) {
+  .directive('openpaasLogo', ['op:injectCss', 'op:template', function(foo, template) {
     return {
       restrict: 'EA',
       replace: true,
