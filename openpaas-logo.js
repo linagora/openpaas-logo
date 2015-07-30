@@ -20,7 +20,7 @@
 
     return parent
   }
-  
+
   function createStyleSheet() {
     var el = createEl('style', {type : 'text/css'});
     ins(document.getElementsByTagName('head')[0], el)
@@ -34,11 +34,11 @@
       '.openpaas-logo,.openpaas-logo>div{-moz-box-sizing:content-box;box-sizing:content-box;' +
       '-o-box-sizing:content-box;-ms-box-sizing:content-box;-webkit-box-sizing:content-box;}',
       '.openpaas-logo>.circle{position: absolute;border-radius: 40em;}',
-      '.openpaas-logo>.blue-circle{height:3em;width:3em;border:0.9em solid rgb(89,122,183);top:1em;left:0.6em;',
-      '.openpaas-logo>.yellow-circle{height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;',
-      '.openpaas-logo>.grey-circle{height:1.3em;width:1.3em;border:0.5em solid rgb(176,177,178);top:6.4em;left:2.2em;'
+      '.openpaas-logo>.blue-circle{height:3em;width:3em;border:0.9em solid #2196F3;top:1em;left:0.6em;',
+      '.openpaas-logo>.yellow-circle{height:3.4em;width:3.4em;border:1em solid #FFC107;top:3.7em;left:5.2em;',
+      '.openpaas-logo>.grey-circle{height:1.3em;width:1.3em;border:0.5em solid #BDBDBD;top:6.4em;left:2.2em;'
     ];
-    
+
     var animrules = [
     '.openpaas-logo.spin>.blue-circle{'+
       'animation-duration: 3s;animation-name:spin-blue;animation-iteration-count:infinite;animation-timing-function:linear;' +
@@ -57,26 +57,26 @@
       '-moz-animation-duration: 3s;-moz-animation-name:spin-grey;-moz-animation-iteration-count:infinite;-moz-animation-timing-function:linear;' +
       '-webkit-animation-duration: 3s;-webkit-animation-name:spin-grey;-webkit-animation-iteration-count:infinite;-webkit-animation-timing-function:linear;' +
       '-ms-animation-duration: 3s;-ms-animation-name:spin-grey;-ms-animation-iteration-count:infinite;-ms-animation-timing-function:linear;' +
-      '-o-animation-duration: 3s;-o-animation-name:spin-grey;-o-animation-iteration-count:infinite;-o-animation-timing-function:linear;}' 
+      '-o-animation-duration: 3s;-o-animation-name:spin-grey;-o-animation-iteration-count:infinite;-o-animation-timing-function:linear;}'
     ];
-    
+
     var keyframesrules = [
-      '@PREFIXkeyframes spin-blue {from{height:3em;width:3em;border: 0.9em solid rgb(89,122,183);top:1em;left:0.6em;} ' +
-      '33% {height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;} ' +
-      '66% {height:1.3em;width:1.3em;border:0.5em solid rgb(176,177,178);top:6.4em;left:2.2em;} '+
-      'to {height:3em;width:3em;border:0.9em solid rgb(89,122,183);top:1em;left:0.6em;}}',
-      '@PREFIXkeyframes spin-yellow{from {height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;} ' +
-      '33% {height:1.3em;width:1.3em;border:0.5em solid rgb(176,177,178);top:6.4em;left:2.2em;} '+
-      '66% {height:3em;width:3em;border:0.9em solid rgb(89,122,183);top:1em;left:0.6em;} '+
-      'to {height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;}}',
-      '@PREFIXkeyframes spin-grey{from {height:1.3em;width:1.3em;border:0.5em solid rgb(176,177,178);top:6.4em;left:2.2em;} ' +
-      '33% {height:3em;width:3em;border:0.9em solid rgb(89,122,183);top:1em;left:0.6em;} '+
-      '66% {height:3.4em;width:3.4em;border:1em solid rgb(241,206,40);top:3.7em;left:5.2em;} '+
-      'to {height:1.3em;width:1.3em;border:0.5em solid rgb(176,177,178);top:6.4em;left:2.2em;}}'
+      '@PREFIXkeyframes spin-blue {from{height:3em;width:3em;border: 0.9em solid #2196F3;top:1em;left:0.6em;} ' +
+      '33% {height:3.4em;width:3.4em;border:1em solid #FFC107;top:3.7em;left:5.2em;} ' +
+      '66% {height:1.3em;width:1.3em;border:0.5em solid #BDBDBD;top:6.4em;left:2.2em;} '+
+      'to {height:3em;width:3em;border:0.9em solid #2196F3;top:1em;left:0.6em;}}',
+      '@PREFIXkeyframes spin-yellow{from {height:3.4em;width:3.4em;border:1em solid #FFC107;top:3.7em;left:5.2em;} ' +
+      '33% {height:1.3em;width:1.3em;border:0.5em solid #BDBDBD;top:6.4em;left:2.2em;} '+
+      '66% {height:3em;width:3em;border:0.9em solid #2196F3;top:1em;left:0.6em;} '+
+      'to {height:3.4em;width:3.4em;border:1em solid #FFC107;top:3.7em;left:5.2em;}}',
+      '@PREFIXkeyframes spin-grey{from {height:1.3em;width:1.3em;border:0.5em solid #BDBDBD;top:6.4em;left:2.2em;} ' +
+      '33% {height:3em;width:3em;border:0.9em solid #2196F3;top:1em;left:0.6em;} '+
+      '66% {height:3.4em;width:3.4em;border:1em solid #FFC107;top:3.7em;left:5.2em;} '+
+      'to {height:1.3em;width:1.3em;border:0.5em solid #BDBDBD;top:6.4em;left:2.2em;}}'
     ];
-    
+
     var sheet = createStyleSheet();
-    
+
     ['', '-moz-', '-webkit-', '-ms-', '-o-'].forEach(function(prefix) {
       keyframesrules.forEach(function(rule) {
         try {
@@ -84,13 +84,13 @@
         } catch(e) {}
       });
     });
-    
+
     rules.concat(animrules).forEach(function(rule) {
       try {
         sheet.insertRule(rule, sheet.cssRules.length);
       } catch(e) {}
     });
-    
+
   })
   .value('op:template', '<div class="openpaas-logo"><div class="circle blue-circle"></div><div class="circle yellow-circle"></div><div class="circle grey-circle"></div></div>')
   .factory('openpaasDomLogo', ['$document', function($document) {
@@ -152,7 +152,7 @@
         scope.$on('us-spinner:stop', function (event, key) {
           if(key === scope.key){ scope.stop(); }
         });
-        
+
         if ( scope.startActive ) {
           scope.spin();
         }
@@ -172,24 +172,24 @@
 
     return config;
   }]);
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
-  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 })();
